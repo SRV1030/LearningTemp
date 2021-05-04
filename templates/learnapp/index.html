@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "learnapp/base.html" %}
+
+  {% block block1 %}
+    {% load staticfiles %}
+    <h1>{{text|upper}}</h1>
+    <h2>Welcome to home</h2>
+    <img src="{% static "images/ecell-logo-bw.png" %}" alt="">
+  {% endblock %}

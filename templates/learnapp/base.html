@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <nav class='navbar navbar-inverse navbar-static-top'>
+      <div class="container">
+      <ul class="nav navbar-nav">
+      <li><a class="navbar-link" href="{% url 'index' %}">Index</a></li>
+      <li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
+      <li><a class="navbar-link" href="#"></a>Profile</li>
+      <li><a class="navbar-link" href="{% url 'learnapp:details' %}">Sign up</a></li>
+      </div>
+    </nav>
+    <div class="container">
+      {% block block1 %}
+      {<!-- details in the other web pages -->}
+      {% endblock %}
+
+    </div>
+  </body>
+</html>

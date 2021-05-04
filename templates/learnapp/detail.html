@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "learnapp\base.html" %}
+{% block block1 %}
+  <h1> Details here: </h1>
+  <div class="container">
+    <div class="jumbotron">
+      <form method="POST">
+        {{form1.as_p}}
+        {{form2.as_p}}
+        {% csrf_token %}
+        <input type="submit" name="Submit" class="btn btn-primary " value="submit">
+      </form>
+    </div>
+  </div>
+  {% endblock %}
